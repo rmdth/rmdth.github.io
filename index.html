@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rmdth</title>
+    <link rel="icon" href="./assets/favicon.ico" />
+    <link rel="preload" href="./assets/video/battlefield.mp4" as="video" />
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <meta name="description" content="yo" />
+    <meta name="author" content="rmdth" />
+    <!-- <meta name="theme-color" content="#000000"> -->
+  </head>
+  <body>
+    <video
+      class="background-video"
+      autoplay
+      muted
+      loop
+      playsinline
+      poster="./assets/images/battlefield-static.jpg"
+    >
+      <source src="./assets/video/battlefield.mp4" type="video/mp4" />
+      <source src="./assets/video/battlefield.webm" type="video/webm" />
+    </video>
+
+    <section class="profile"></section>
+
+    <section class="additional-info">
+      <div class="ai-container"></div>
+    </section>
+    <section class="embeds"></section>
+    <section class="comments"></section>
+
+    <script type="module" src="./scripts/main.js"></script>
+  </body>
+</html>
