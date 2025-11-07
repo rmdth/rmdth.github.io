@@ -14,10 +14,11 @@
     },
     "status": "Offline",
     "right_column_items": [
-        { "label": "Badges", "number": 3, "fat": [
-            {"icon": "./assets/images/icons/python.svg","name": "Python", "description": "This guy is confident with python", "extra": "300 EXP"},
-            {"icon": "./assets/images/icons/html.svg","name": "HTML", "description": "This guy is confident with html", "extra": "300 EXP"},
-            {"icon": "./assets/images/icons/css.svg","name": "CSS", "description": "This guy is confident with css", "extra": "300 EXP"}
+        { "label": "Badges", "number": 4, "fat": [
+            {"icon": "./assets/images/icons/python.svg","name": "Python", "description": "This guy is confident with Python", "extra": "300 EXP"},
+            {"icon": "./assets/images/icons/typescript.svg","name": "TypeScript", "description": "This guy is confident with TypeScript", "extra": "300 EXP"},
+            {"icon": "./assets/images/icons/html.svg","name": "HTML", "description": "This guy is confident with HTML", "extra": "300 EXP"},
+            {"icon": "./assets/images/icons/css.svg","name": "CSS", "description": "This guy is confident with CSS", "extra": "300 EXP"}
         ] },
         { "label" : ":P", "number": 0, "fat": false }
     ],
