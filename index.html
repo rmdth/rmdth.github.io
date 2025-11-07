@@ -5,16 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>rmdth</title>
     <link rel="icon" href="./assets/favicon.ico" />
-    <link rel="preload" href="./assets/video/battlefield.mp4" as="video" />
+    <link
+      rel="preload"
+      href="./assets/images/battlefield-static.jpg"
+      as="image"
+      type="image/jpeg"
+    />
+
     <link rel="stylesheet" href="./styles/style.css" />
 
     <meta name="description" content="yo" />
     <meta name="author" content="rmdth" />
     <!-- <meta name="theme-color" content="#000000"> -->
   </head>
+  <script type="module" src="./scripts/js/main.js"></script>
   <body>
     <video
-      class="background-video"
       autoplay
       muted
       loop
@@ -25,14 +31,180 @@
       <source src="./assets/video/battlefield.webm" type="video/webm" />
     </video>
 
-    <section class="profile"></section>
+    <div class="background-overlay-left" aria-hidden="true"></div>
+    <div class="background-overlay-right" aria-hidden="true"></div>
+    <div class="background-overlay-top" aria-hidden="true"></div>
+    <div class="background-overlay-bottom" aria-hidden="true"></div>
 
-    <section class="additional-info">
-      <div class="ai-container"></div>
-    </section>
-    <section class="embeds"></section>
-    <section class="comments"></section>
-
-    <script type="module" src="./scripts/main.js"></script>
+    <div class="container">
+      <section class="profile">
+        <div class="avatar">
+          <img src="./assets/images/avatar.png" alt="" />
+        </div>
+        <div class="info">
+          <p class="display_name thin">
+            rmdth
+            <span class="name-history">⯆</span>
+          </p>
+          <p class="real_name">
+            ram
+            <!-- <img class="flag" src="" alt="" /> Country -->
+          </p>
+        </div>
+        <div class="description">
+          <p>yo</p>
+        </div>
+        <div class="stats">
+          <a href="#" class="favorite-badge">
+            <img class="badge" src="./assets/images/badge.png" alt="" />
+            <div class="info">
+              <p>badge-name</p>
+              <span>500 EXP</span>
+            </div>
+          </a>
+        </div>
+      </section>
+      <section class="additional">
+        <div class="left-column">
+          <div class="cards">
+            <!-- <div class="card">
+              <p class="card__title">Card title</p>
+              <div class="card__body">
+                <div class="stuff">
+                  <p>Card body</p>
+                </div>
+              </div>
+            </div> -->
+          </div>
+          <div class="comments border-radius">
+            <p class="header align-center thin">Comments</p>
+            <div class="body">
+              <div class="make-a-comment">
+                <!-- min-height -->
+              </div>
+              <div class="comment online">
+                <div class="mini-avatar">
+                  <img src="./assets/images/test-comment.jpg" alt="" />
+                </div>
+                <div class="comment-body">
+                  <p>
+                    <span class="name thin">Coming When</span>
+                    <span class="date">6 Nov, 2025 @ 2:29pm </span>
+                  </p>
+                  <p class="comment-text">
+                    The site is actually hosted somewhere :P
+                  </p>
+                </div>
+              </div>
+              <!-- <div class="comment">
+                <div class="mini-avatar">
+                  <img src="./assets/images/test-comment.jpg" alt="" />
+                </div>
+                <div class="comment-body">
+                  <p>
+                    <span class="name thin">Nombre</span>
+                    <span class="date">10 MAY a las 5:09 p. m.</span>
+                  </p>
+                  <p class="comment-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolor, provident fugiat? Accusamus, necessitatibus
+                    excepturi. Suscipit sit praesentium, numquam iusto
+                    necessitatibus nam itaque provident est libero non autem
+                    esse. Doloremque corrupti quibusdam, modi, molestiae placeat
+                    animi sit sunt sed eaque minus reiciendis quasi quia. Amet
+                    similique consequuntur qui dicta, officiis commodi!
+                  </p>
+                </div>
+              </div> -->
+            </div>
+            <div class="comments__footer"></div>
+          </div>
+        </div>
+        <div class="right-column border-radius">
+          <p class="status thin offline">Offline</p>
+          <div class="right-column__list">
+            <div class="item">
+              <a href=""
+                ><span class="a-text">Languages</span>
+                <span class="item-number">1</span></a
+              >
+            </div>
+            <!-- <div class="item">
+              <a href=""
+                ><span class="a-text">Juegos</span>
+                <span class="item-number">1</span></a
+              >
+            </div> -->
+            <div class="item">
+              <a href=""><span class="a-text">Inventario</span></a>
+            </div>
+            <div class="item">
+              <a href=""
+                ><span class="a-text">Capturas</span>
+                <span class="item-number">1</span></a
+              >
+            </div>
+            <!-- <div class="item">
+              <a href=""
+                ><span class="a-text">Reseñas</span>
+                <span class="item-number">1</span></a
+              >
+            </div> -->
+            <!-- <div class="item friendlist">
+              <a href=""
+                ><span class="a-text">Amigos</span>
+                <span class="item-number">1</span></a
+              >
+              <ul class="friends">
+                <li>
+                  <a href="">
+                    <div class="mini-avatar">
+                      <img src="./assets/images/avatar.png" alt="" />
+                    </div>
+                    <div class="info">
+                      <p>Nombre</p>
+                      <p>description</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="">
+                    <div class="mini-avatar">
+                      <img src="./assets/images/avatar.png" alt="" />
+                    </div>
+                    <div class="info">
+                      <p>Nombre</p>
+                      <p>description</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="">
+                    <div class="mini-avatar">
+                      <img src="./assets/images/avatar.png" alt="" />
+                    </div>
+                    <div class="info">
+                      <p>Nombre</p>
+                      <p>description</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="">
+                    <div class="mini-avatar">
+                      <img src="./assets/images/avatar.png" alt="" />
+                    </div>
+                    <div class="info">
+                      <p>Nombre</p>
+                      <p>description</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div> -->
+          </div>
+        </div>
+      </section>
+    </div>
   </body>
 </html>

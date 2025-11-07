@@ -1,0 +1,35 @@
+{
+    "name": "rmdth",
+    "real_name": "ram",
+    "description": "yo",
+    "avatar": "./assets/images/avatar.png",
+    "favorite_badge": {
+        "badge": "./assets/images/icons/favorite-badge.png",
+        "badge_info": {
+            "name": "Level 1 Crook",
+            "description": "...",
+            "experience": "100 EXP",
+            "url": "#"
+        }
+    },
+    "status": "Offline",
+    "right_column_items": [
+        { "label": "Badges", "number": 3, "fat": [
+            {"icon": "./assets/images/icons/python.svg","name": "Python", "description": "This guy is confident with python", "extra": "300 EXP"},
+            {"icon": "./assets/images/icons/html.svg","name": "HTML", "description": "This guy is confident with html", "extra": "300 EXP"},
+            {"icon": "./assets/images/icons/css.svg","name": "CSS", "description": "This guy is confident with css", "extra": "300 EXP"}
+        ] },
+        { "label" : ":P", "number": 0, "fat": false }
+    ],
+    "friends": [
+        {
+            "name": "Coming When",
+            "avatar": "./assets/images/test-comment.jpg",
+            "description": "The site is actually hosted somewhere :P",
+            "online": true,
+            "url": "#"
+        }
+    ],
+    "cards": []
+    
+}
